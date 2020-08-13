@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     res.status(200).json({data: 'API started successfully'})
 });
 
-app.get('/jsp/api/v1/add-school', async(req, res) => {
+app.get('add-school', async(req, res) => {
     
    try {
 
@@ -152,4 +152,3 @@ db.connect((err) => {
 
 app.listen(PORT, ()=> console.log(`JSP react test project running on port  ${PORT}`));
 
-module.exports = app
